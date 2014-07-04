@@ -1,9 +1,9 @@
-#! /bin/bash
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-#ln -s ~/dotfiles/.gvimrc ~/.gvimrc
-ln -s ~/dotfiles/.bashrc ~/.bashrc
-ln -s ~/dotfiles/.bash_profile ~/.bash_profile
-#ln -s ~/dotfiles/.vim ~/.vim
-ln -s ~/dotfiles/.gitconfig ~/.gitconfig
-#ln -s ~/dotfiles/.gitignore_global ~/.gitignore_global
-ln -s ~/dotfiles/.hgrc ~/.hgrc
+#!/bin/sh
+cd $(dirname $0)
+for dotfile in .?*
+do
+    if [ $dotfile != '..' ] && [ $dotfile != '.git' ]
+    then
+        ln -Fis "$PWD/$dotfile" $HOME
+    fi
+done
