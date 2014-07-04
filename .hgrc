@@ -1,0 +1,6 @@
+[http_proxy]
+host = http://172.30.15.72:8080/
+no = sc1425,192.168.28.80
+[ui]
+username = Yuusuke Iida <iidayuus@intellilink.co.jp>
+verbose = True

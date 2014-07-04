@@ -1,0 +1,5 @@
+[user]
+        email = yusk.iida@gmail.com
+        name = yuusuke
+[http]
+        proxy = http://proxy:8080/
